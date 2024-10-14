@@ -3411,7 +3411,7 @@
                 "parameters": [
                     {
                         "name": "Username",
-                        "in": "query",
+                        "in": "body",
                         "description": "The username of the user to login",
                         "required": true,
                         "schema": {
@@ -3420,7 +3420,7 @@
                     },
                     {
                         "name": "Password",
-                        "in": "query",
+                        "in": "body",
                         "description": "The password of the user to login",
                         "required": true,
                         "schema": {
@@ -3429,7 +3429,7 @@
                     },
                     {
                         "name": "LinkBasedMFA",
-                        "in": "query",
+                        "in": "body",
                         "description": "When set to \"Y\" and the User has 2FA enabled the login will send a clickable link to the user instead of a One Time Code. Default: \"N\".",
                         "required": false,
                         "schema": {
@@ -3438,7 +3438,7 @@
                     },
                     {
                         "name": "Key",
-                        "in": "query",
+                        "in": "body",
                         "description": "The key recieved from /v1/Users/2FAKey when the User account is setup for Browser/Device verification.",
                         "required": false,
                         "schema": {
@@ -3447,7 +3447,7 @@
                     },
                     {
                         "name": "IsExcel",
-                        "in": "query",
+                        "in": "body",
                         "required": false,
                         "schema": {
                             "type": "string"
