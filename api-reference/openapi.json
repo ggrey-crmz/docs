@@ -3408,52 +3408,37 @@
                 ],
                 "summary": "Logs a user in",
                 "operationId": "User_LoginUser",
-                "parameters": [
-                    {
-                        "name": "Username",
-                        "in": "query",
-                        "description": "The username of the user to login",
-                        "required": true,
-                        "schema": {
-                            "type": "string"
-                        }
-                    },
-                    {
-                        "name": "Password",
-                        "in": "query",
-                        "description": "The password of the user to login",
-                        "required": true,
-                        "schema": {
-                            "type": "string"
-                        }
-                    },
-                    {
-                        "name": "LinkBasedMFA",
-                        "in": "query",
-                        "description": "When set to \"Y\" and the User has 2FA enabled the login will send a clickable link to the user instead of a One Time Code. Default: \"N\".",
-                        "required": false,
-                        "schema": {
-                            "type": "string"
-                        }
-                    },
-                    {
-                        "name": "Key",
-                        "in": "query",
-                        "description": "The key recieved from /v1/Users/2FAKey when the User account is setup for Browser/Device verification.",
-                        "required": false,
-                        "schema": {
-                            "type": "string"
-                        }
-                    },
-                    {
-                        "name": "IsExcel",
-                        "in": "query",
-                        "required": false,
-                        "schema": {
-                            "type": "string"
-                        }
-                    }
-                ],
+				"requestBody": {
+				  "required": true,
+				  "content": {
+					"application/x-www-form-urlencoded": {
+					  "schema": {
+						"type": "object",
+						"properties": {
+						  "Username": {
+							"type": "string"
+						  },
+						  "Password": {
+							"type": "string"
+						  },
+						  "LinkBasedMFA": {
+							  "type": "string"
+						  },
+						  "Key": {
+							  "type": "string"
+						  },
+						  "IsExcel": {
+							  "type": "string"
+						  }
+						},
+						"required": [
+						  "Username",
+						  "Password"
+						]
+					  }
+					}
+				  }
+				},
                 "responses": {
                     "200": {
                         "description": "OK",
