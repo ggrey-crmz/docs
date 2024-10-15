@@ -3419,7 +3419,8 @@
 							"type": "string"
 						  },
 						  "Password": {
-							"type": "string"
+							"type": "string",
+							"format": "password"
 						  },
 						  "LinkBasedMFA": {
 							  "type": "string"
