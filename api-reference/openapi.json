@@ -4,14 +4,6 @@
         "version": "v2",
         "title": "Credit Risk Monitor API"
     },
-	"components": {
-		"securitySchemes": {
-			"bearerAuth": {
-				"type": "http",
-				"scheme": "bearer"
-			}
-		}
-	},
     "paths": {
         "/v1/Business/IdentificationGroup": {
             "get": {
