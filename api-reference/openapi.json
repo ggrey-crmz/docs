@@ -3570,7 +3570,7 @@
     },
     "servers": [
         {
-            "url": "http://api.creditriskmonitor.com"
+            "url": "https://api.creditriskmonitor.com"
         }
     ],
     "components": {
