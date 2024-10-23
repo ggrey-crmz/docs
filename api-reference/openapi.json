@@ -10,7 +10,7 @@
                 "tags": [
                     "Business"
                 ],
-                "summary": "Returns the Identification Group for a single Business.",
+                "summary": "Returns the Identification Group for a single Business!",
                 "operationId": "Business_GetIdentificationGroup",
                 "parameters": [
                     {
