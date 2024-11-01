@@ -3419,7 +3419,7 @@
 							"type": "string"
 						  },
 						  "Password": {
-							"type": "password",
+							"type": "string",
 							"format": "password"
 						  },
 						  "LinkBasedMFA": {
